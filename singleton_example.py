@@ -1,3 +1,4 @@
+'''A toy example of the singleton pattern translated from Wikipedia.'''
 class Coin(object):
 
     def __new__(cls):
