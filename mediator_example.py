@@ -1,3 +1,5 @@
+'''An example of the mediator pattern from Wikipedia translated to Python'''
+
 from typing import List, Callable
 
 class Mediator:
