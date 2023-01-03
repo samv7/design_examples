@@ -10,26 +10,21 @@ class ICommand:
         raise NotImplementedError
 
 
-
 # The Invoker class 
 class Switch(object):
-
 
     def __init__(self, closed_command : ICommand, opened_command: ICommand):
         self._closed_command = closed_command
         self._opened_command = opened_command
 
-
     # Close the circuit / power on
     def close(self):
         self._closed_command.execute()
-
 
     # Open the circuit / power off
     def open(self):
         self._opened_command.execute()
   
-
 
 #An interface that defines actions that the receiver can perform
 class ISwitchable:
